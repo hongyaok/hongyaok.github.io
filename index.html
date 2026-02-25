@@ -8,6 +8,8 @@
       name="description"
       content="Portfolio of Hong Yao Koh featuring software projects, photography, and video work."
     />
+    <meta name="theme-color" content="#0b1020" />
+    <link rel="icon" type="image/png" href="icons/cat.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -15,7 +17,7 @@
     <div class="bg-glow bg-glow-2" aria-hidden="true"></div>
 
     <header class="site-header">
-      <a class="brand" href="#top">hongyaok</a>
+      <a class="brand" href="#top">Hong Yao</a>
       <nav class="site-nav" aria-label="Primary">
         <a href="#projects">Projects</a>
         <a href="#gallery">Gallery</a>
@@ -24,27 +26,33 @@
     </header>
 
     <main id="top">
-      <section class="hero section">
-        <p class="eyebrow">Software Engineer • Creator</p>
-        <h1>Building practical software, then capturing stories through a lens.</h1>
-        <p class="hero-copy">
-          I’m Hong Yao Koh. I build full-stack and ML projects, and I’m also passionate
-          about photography and video.
-        </p>
-        <div class="button-row" id="contact">
-          <a class="btn btn-primary" href="https://github.com/hongyaok" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a class="btn btn-secondary" href="https://www.linkedin.com/in/hongyaok/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <section class="hero section reveal">
+        <div class="hero-layout">
+          <div class="hero-visual">
+            <img class="profile-pic" src="icons/me.jpg" alt="Portrait of Hong Yao Koh" />
+          </div>
+          <div class="hero-content">
+            <p class="eyebrow">Data Science • AI</p>
+            <h1>Building practical tools and exploring new developments in AI</h1>
+            <p class="hero-copy">
+              I’m Hong Yao Koh. I build practical ML-focused projects and enjoy creating visual stories through photography and basketball edits.
+            </p>
+            <div class="button-row" id="contact">
+              <a class="btn btn-primary" href="https://github.com/hongyaok" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a class="btn btn-secondary" href="https://www.linkedin.com/in/hongyaok/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="section" id="projects">
-        <div class="section-head">
+        <div class="section-head reveal">
           <p class="eyebrow">Technical Projects</p>
           <h2>Things I’ve been building</h2>
         </div>
 
         <div class="project-grid">
-          <article class="card">
+          <article class="card reveal">
             <div class="card-top">
               <h3>SGHumidity <span class="latest">Latest</span></h3>
               <a href="https://github.com/hongyaok/SGHumidity" target="_blank" rel="noopener noreferrer">View ↗</a>
@@ -62,7 +70,7 @@
             </div>
           </article>
 
-          <article class="card">
+          <article class="card reveal">
             <div class="card-top">
               <h3>EZtrip</h3>
               <a href="https://github.com/hongyaok/EZtrip" target="_blank" rel="noopener noreferrer">View ↗</a>
@@ -80,7 +88,7 @@
             </div>
           </article>
 
-          <article class="card">
+          <article class="card reveal">
             <div class="card-top">
               <h3>h4g2025 (SBC-PA)</h3>
               <a href="https://github.com/hongyaok/h4g2025" target="_blank" rel="noopener noreferrer">View ↗</a>
@@ -98,7 +106,7 @@
             </div>
           </article>
 
-          <article class="card">
+          <article class="card reveal">
             <div class="card-top">
               <h3>Burn-Captions</h3>
               <a href="https://github.com/hongyaok/Burn-Captions" target="_blank" rel="noopener noreferrer">View ↗</a>
@@ -119,29 +127,23 @@
       </section>
 
       <section class="section" id="gallery">
-        <div class="section-head">
+        <div class="section-head reveal">
           <p class="eyebrow">Passion Projects</p>
           <h2>Photography & Video</h2>
         </div>
 
         <div class="media-grid">
-          <figure class="media-card">
+          <figure class="media-card reveal">
             <img src="gallery/DSC_2067_001Edited.jpg" alt="Photography work 1" loading="lazy" />
           </figure>
-          <figure class="media-card">
+          <figure class="media-card reveal">
             <img src="gallery/DSC_3756.jpg" alt="Photography work 2" loading="lazy" />
           </figure>
-          <figure class="media-card">
+          <figure class="media-card reveal">
             <img src="gallery/DSC_3823.jpg" alt="Photography work 3" loading="lazy" />
           </figure>
-          <figure class="media-card">
+          <figure class="media-card reveal">
             <img src="gallery/DSC_4038_036Edited.jpg" alt="Photography work 4" loading="lazy" />
-          </figure>
-          <figure class="media-card">
-            <video controls preload="metadata" playsinline>
-              <source src="gallery/final3.mp4" type="video/quicktime" />
-              Your browser does not support video playback.
-            </video>
           </figure>
         </div>
       </section>
@@ -150,5 +152,6 @@
     <footer class="site-footer">
       <p>© 2026 Hong Yao Koh</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
