@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hong Yao Koh | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Hong Yao Koh featuring software projects, photography, and video work."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-glow bg-glow-1" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow-2" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top">hongyaok</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#projects">Projects</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <p class="eyebrow">Software Engineer • Creator</p>
+        <h1>Building practical software, then capturing stories through a lens.</h1>
+        <p class="hero-copy">
+          I’m Hong Yao Koh. I build full-stack and ML projects, and I’m also passionate
+          about photography and video.
+        </p>
+        <div class="button-row" id="contact">
+          <a class="btn btn-primary" href="https://github.com/hongyaok" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a class="btn btn-secondary" href="https://www.linkedin.com/in/hongyaok/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-head">
+          <p class="eyebrow">Technical Projects</p>
+          <h2>Things I’ve been building</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="card">
+            <div class="card-top">
+              <h3>SGHumidity <span class="latest">Latest</span></h3>
+              <a href="https://github.com/hongyaok/SGHumidity" target="_blank" rel="noopener noreferrer">View ↗</a>
+            </div>
+            <p>
+              Machine learning pipeline for Singapore humidity prediction, including
+              feature engineering, model comparison, and visualized outputs.
+            </p>
+            <div class="tags">
+              <span>Python</span>
+              <span>Machine Learning</span>
+              <span>Gradient Boosting</span>
+              <span>Data Processing</span>
+              <span>Model Evaluation</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <h3>EZtrip</h3>
+              <a href="https://github.com/hongyaok/EZtrip" target="_blank" rel="noopener noreferrer">View ↗</a>
+            </div>
+            <p>
+              Collaborative trip-planning web app with user auth, shared itineraries,
+              voting, and invite workflows for group decision making.
+            </p>
+            <div class="tags">
+              <span>Flask</span>
+              <span>Supabase</span>
+              <span>Google OAuth</span>
+              <span>Google Maps API</span>
+              <span>Full Stack</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <h3>h4g2025 (SBC-PA)</h3>
+              <a href="https://github.com/hongyaok/h4g2025" target="_blank" rel="noopener noreferrer">View ↗</a>
+            </div>
+            <p>
+              Team scheduling platform with task planning, invitations, notifications,
+              and chat, built with separate frontend and backend apps.
+            </p>
+            <div class="tags">
+              <span>React</span>
+              <span>Flask API</span>
+              <span>Scheduling</span>
+              <span>Chat System</span>
+              <span>Hackathon Build</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <h3>Burn-Captions</h3>
+              <a href="https://github.com/hongyaok/Burn-Captions" target="_blank" rel="noopener noreferrer">View ↗</a>
+            </div>
+            <p>
+              Personal subtitle automation tool that generates captions with Whisper and
+              burns them into video output using a Dockerized workflow.
+            </p>
+            <div class="tags">
+              <span>Python</span>
+              <span>Whisper</span>
+              <span>FFmpeg</span>
+              <span>Docker</span>
+              <span>Video Processing</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="gallery">
+        <div class="section-head">
+          <p class="eyebrow">Passion Projects</p>
+          <h2>Photography & Video</h2>
+        </div>
+
+        <div class="media-grid">
+          <figure class="media-card">
+            <img src="gallery/DSC_2067_001Edited.jpg" alt="Photography work 1" loading="lazy" />
+          </figure>
+          <figure class="media-card">
+            <img src="gallery/DSC_3756.jpg" alt="Photography work 2" loading="lazy" />
+          </figure>
+          <figure class="media-card">
+            <img src="gallery/DSC_3823.jpg" alt="Photography work 3" loading="lazy" />
+          </figure>
+          <figure class="media-card">
+            <img src="gallery/DSC_4038_036Edited.jpg" alt="Photography work 4" loading="lazy" />
+          </figure>
+          <figure class="media-card">
+            <video controls preload="metadata" playsinline>
+              <source src="gallery/final3.mp4" type="video/quicktime" />
+              Your browser does not support video playback.
+            </video>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Hong Yao Koh</p>
+    </footer>
+  </body>
+</html>
